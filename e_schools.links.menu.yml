@@ -1,0 +1,18 @@
+e_schools.registration:
+  title: 'New Registration'
+  route_name: e_schools.registration
+  menu_name: main
+  weight: 1
+
+
+e_schools.registrations:
+  title: 'Registration List'
+  route_name: e_schools.registrations
+  menu_name: main
+  weight: 2
+
+e_schools.dashboard:
+  title: 'Dashboard'
+  route_name: e_schools.dashboard
+  menu_name: main
+  weight: 0

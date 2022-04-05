@@ -1,0 +1,77 @@
+e_schools.controller1:
+  path: '/controller1'
+  defaults:
+    _controller:  '\Drupal\e_schools\Controller\DefaultController::controller1'
+    _title: 'controller1'
+  requirements:
+    _permission: 'access content'
+
+e_schools.registration:
+  path: '/registration'
+  defaults:
+    _form:  '\Drupal\e_schools\Form\RegistrationForm'
+    _title: 'Registration Form'
+  requirements:
+    _permission: 'access content'
+
+e_schools.registrations:
+  path: '/registrations'
+  defaults:
+    _form:  '\Drupal\e_schools\Form\RegistrationListForm'
+    _title: 'RegistrationListForm'
+  requirements:
+    _permission: 'access content'
+
+e_schools.google:
+  path: '/google'
+  defaults:
+    _controller:  '\Drupal\e_schools\Controller\DefaultController::google'
+    _title: 'google'
+  requirements:
+    _permission: 'access content'
+
+e_schools.registration_view:
+  path: '/registration/{id}'
+  options:
+    id: \d+
+  defaults:
+    _controller:  '\Drupal\e_schools\Controller\DefaultController::registration_view'
+    _title: 'View Registration'
+  requirements:
+    _permission: 'access content'
+
+e_schools.registration_pdf:
+  path: '/registration/{id}/pdf'
+  options:
+    id: \d+
+  defaults:
+    _controller:  '\Drupal\e_schools\Controller\DefaultController::registration_pdf'
+    _title: 'View Registration PDF'
+  requirements:
+    _permission: 'access content'
+
+e_schools.registration_edit:
+  path: '/registration/{id}/edit'
+  options:
+    id: \d+
+  defaults:
+    _form:  '\Drupal\e_schools\Form\RegistrationForm'
+    _title: 'Edit Registration'
+  requirements:
+    _permission: 'access content'
+
+e_schools.dashboard:
+  path: '/dashboard'
+  defaults:
+    _controller:  '\Drupal\e_schools\Controller\DefaultController::dashboard'
+    _title: 'dashboard'
+  requirements:
+    _permission: 'access content'
+
+e_schools.form:
+  path: '/form'
+  defaults:
+    _controller:  '\Drupal\e_schools\Controller\DefaultController::form'
+    _title: 'form'
+  requirements:
+    _permission: 'access content'
